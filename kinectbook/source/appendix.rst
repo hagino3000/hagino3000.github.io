@@ -13,7 +13,7 @@
 SensorKinect for 64ビット版Windowsのリリース
 ============================================
 
-WindowsへのOpenNIのインストールの箇所で **SensorKinectが32ビット版しか無いため** と記載しましたが、64ビット版Windows用のインストーラーがアップされました。
+WindowsへのOpenNIのインストールの箇所で **SensorKinectが32ビット版しか無いため** と記載しましたが、64ビット版Windows用のインストーラーがリリースされました。
 
 64ビット版Windowsを使う場合はSensorKinect, OpenNI, NITE全て64ビット用バイナリを使いましょう。
 
@@ -24,10 +24,10 @@ OpenNIの進化
 
 OpenNIのインストール手順に載せたバージョンはもうダウンロードページから手に入らないので、最新版を利用してください。SensorKinect, OpenNI, NITE 全て新しいバージョンがリリースされました。ボーントラッキングは執筆時点とは比べ物にならない位に使い易くなっています。
 
-- ボーントラッキングに初期ポーズは不要なった。
+- ボーントラッキングに初期ポーズは不要になった。
 - 上半身のみ、下半身のみ、頭と手のみのトラッキングが可能になった。
 - 対応OSにAndroidが追加された。
-- APIリファレンスがオンラインで参照できる様になった。(http://openni.org/docs2/Reference/index.html)
+- `APIリファレンス <http://openni.org/docs2/Reference/index.html>`_ がオンラインで参照できる様になった。
 - AudioGeneratorが実装された
 
 
