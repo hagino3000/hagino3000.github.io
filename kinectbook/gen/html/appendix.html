@@ -47,6 +47,7 @@
   <div class="section" id="id1">
 <h1>「キネクトハッカーズマニュアル」補足資料<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p>説明不足だった箇所や、本に載せた内容が既に古くなってしまった部分について補足します。</p>
+<p><em>最終更新: 2012-01-08</em></p>
 <div class="section" id="id2">
 <h2>大きく変わった点<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="sensorkinect-for-64windows">
@@ -58,13 +59,14 @@
 </div>
 <div class="section" id="openni">
 <h3>OpenNIの進化<a class="headerlink" href="#openni" title="Permalink to this headline">¶</a></h3>
-<p>OpenNIのインストール手順に載せたバージョンはもうダウンロードページから手に入らないので、最新版を利用してください。SensorKinect, OpenNI, NITE 全て新しいバージョンがリリースされました。</p>
-<blockquote>
-<div><ul class="simple">
-<li>2012年1月時点で、ボーントラッキングに初期ポーズは不要になり、Kinect SDK以上に使い勝手が良くなっています。</li>
-<li>対応OSにAndroidが追加されました。</li>
+<p>OpenNIのインストール手順に載せたバージョンはもうダウンロードページから手に入らないので、最新版を利用してください。SensorKinect, OpenNI, NITE 全て新しいバージョンがリリースされました。ボーントラッキングは執筆時点とは比べ物にならない位に使い易くなっています。</p>
+<ul class="simple">
+<li>ボーントラッキングに初期ポーズは不要なった。</li>
+<li>上半身のみ、下半身のみ、頭と手のみのトラッキングが可能になった。</li>
+<li>対応OSにAndroidが追加された。</li>
+<li>APIリファレンスがオンラインで参照できる様になった。(<a class="reference external" href="http://openni.org/docs2/Reference/index.html">http://openni.org/docs2/Reference/index.html</a>)</li>
+<li>AudioGeneratorが実装された</li>
 </ul>
-</div></blockquote>
 </div>
 <div class="section" id="id3">
 <h3>OpenNIのダウンロードページが大きく変りました<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
@@ -76,7 +78,7 @@
 <p>Kinect以外のモーションキャプチャデバイスとして <strong>Xtion pro</strong> を紹介しましたが、さらにビデオカメラとアレイマイクが追加された <strong>Xtion PRO LIVE</strong> が発売されました。Xtion Proと同じく5VのUSB給電で動作します(Kinectはチルトモーターが12V必要とするためUSB給電で動作しない)。家電量販店のパーツコーナーで購入できるとの事ですが、Amazonで注文するのが一番早いと思います。</p>
 <p><a class="reference external" href="http://www.asus.com/Multimedia/Motion_Sensor/Xtion_PRO_LIVE/">ASUSTeK Computer Inc. - Multimedia- ASUS Xtion PRO LIVE</a></p>
 <div class="figure">
-<img alt="Xtion Pro LIVE" src="images/xtion_pro_live.png" style="width: 480px;" />
+<img alt="Xtion Pro LIVE" src="images/xtion_pro_live2.png" style="width: 480px;" />
 <p class="caption">ASUS Xtion Pro LIVE</p>
 </div>
 <p>これを機に未実装だったOpenNIのオーディオ周りの部分の実装が進む事でしょう。</p>
@@ -301,6 +303,16 @@ Warning: USB events thread - failed to set priority. This might cause loss of da
 <p>Webブラウザでソケット通信をするためのAPIです。これができる前まで、WebブラウザはステートレスなHTTP(Hyper Text Transfer Protocol)しか話せませんでした。ソケット通信を行なうにはFlashを使うしか無かったのですが、WebSocketの実装が進んだ事で気軽にソケット通信ができる様になりました。</p>
 <p>WebSocketは生のTCPコネクションを張るわけでは無いため、TCPソケットライブラリを使ってやりとりする事はできません。</p>
 </div>
+<div class="section" id="id14">
+<h3>WebSocketでバイナリデータが扱える様になりました<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<p>執筆時点ではWebSocketでバイナリデータを扱う事はできませんでしたが、2011年末にはバイナリが扱える様になっていました。私が動作確認したのは次のバージョンです。</p>
+<ul class="simple">
+<li>Chrome17 dev</li>
+<li>Node 0.6.3</li>
+</ul>
+<p>使い方は筆者(西林)のブログでも詳解しましたので、参考にしてください。</p>
+<p><a class="reference external" href="http://d.hatena.ne.jp/hagino_3000/20111209/1323372153">WebSocketでバイナリデータを送受信してみる - 電脳戦士ハラキリ -SE道とは死ぬ事と見つけたり-</a></p>
+</div>
 <div class="section" id="canvas">
 <h3>Canvas<a class="headerlink" href="#canvas" title="Permalink to this headline">¶</a></h3>
 <p>Webブラウザでビットマップデータの描画ができるAPIです。
@@ -351,6 +363,7 @@ Warning: USB events thread - failed to set priority. This might cause loss of da
 <li><a class="reference internal" href="#kinecttips">9. Kinectを使ったアプリケーション開発TIPs</a><ul>
 <li><a class="reference internal" href="#node-js">Node.js</a></li>
 <li><a class="reference internal" href="#websocket">WebSocket</a></li>
+<li><a class="reference internal" href="#id14">WebSocketでバイナリデータが扱える様になりました</a></li>
 <li><a class="reference internal" href="#canvas">Canvas</a></li>
 </ul>
 </li>
