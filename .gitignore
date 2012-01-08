@@ -1,0 +1,6 @@
+#ignore thumbnails created by windows
+Thumbs.db
+#ignore vim swap file
+.*.swp
+#ignore Desktop Service Store files created by mac
+*.DS_Store
