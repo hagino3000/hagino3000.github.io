@@ -28,7 +28,7 @@ OpenNIのインストール手順に載せたバージョンはもうダウン�
 - 上半身のみ、下半身のみ、頭と手のみのトラッキングが可能になった。
 - 対応OSにAndroidが追加された。
 - `APIリファレンス <http://openni.org/docs2/Reference/index.html>`_ がオンラインで参照できる様になった。
-- AudioGeneratorが実装された
+- AudioGeneratorが実装された(Windows版のみ動作確認済み)
 
 
 OpenNIのダウンロードページが大きく変りました
