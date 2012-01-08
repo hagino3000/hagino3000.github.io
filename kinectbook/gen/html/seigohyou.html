@@ -1,0 +1,176 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>「キネクトハッカーズマニュアル」正誤表 &mdash; Kinect Book Support v1.0 documentation</title>
+    <link rel="stylesheet" href="static/default.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="top" title="Kinect Book Support v1.0 documentation" href="index.html" />
+    <link rel="next" title="「キネクトハッカーズマニュアル」補足資料" href="appendix.html" />
+    <link rel="prev" title="Welcome to Kinect Book Support’s documentation!" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="appendix.html" title="「キネクトハッカーズマニュアル」補足資料"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to Kinect Book Support’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Kinect Book Support v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>「キネクトハッカーズマニュアル」正誤表<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>最終更新:2011年9月5日</p>
+<div class="section" id="id2">
+<h2>4章 ドライバのセットアップ<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Windows用SensorKinectについて、 <a class="reference external" href="https://github.com/avin2/SensorKinect">64bit Windows用のインストーラー</a> がリリースされました。
+64bit版Windowsを利用している場合はSensorKinect, OpenNI, NITEの3つとも64bit版を使うのが良いでしょう。</p>
+</div>
+<div class="section" id="openni">
+<h2>5章 OpenNIプログラミング<a class="headerlink" href="#openni" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id3">
+<h3>5.2のコード<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>2行目、 MacOSで実行する時にinclude失敗するので、次の通り修正してください。</p>
+<div class="highlight-python"><pre>(誤)#include &lt;iostream.h&gt;
+(正)#include &lt;iostream&gt;</pre>
+</div>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>8章 アプリケーションを作ってみよう<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="kinectweb-h">
+<h3>8.3 KinectWeb.h<a class="headerlink" href="#kinectweb-h" title="Permalink to this headline">¶</a></h3>
+<p>18行目から21行目</p>
+<div class="highlight-python"><pre>(誤)
+ofxOpenNIContext  recordContext;
+ofxDepthGenerator recordDepth;
+ofxImageGenerator recordImage;
+ofxUserGenerator  recordUser;
+
+(正)
+ofxOpenNIContext  context;
+ofxDepthGenerator depthGenerator;
+ofxImageGenerator imageGenerator;
+ofxUserGenerator  userGenerator;</pre>
+</div>
+<p>図8.9のキャプション</p>
+<div class="highlight-python"><pre>(誤)バックエンドの実行結果
+(正)フロントエンドの実行結果</pre>
+</div>
+</div>
+</div>
+<div class="section" id="kinecttips">
+<h2>9章 Kinectを使ったアプリケーション開発Tips<a class="headerlink" href="#kinecttips" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id5">
+<h3>9.2 ハードウェアの操作<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>(記載漏れ)
+Windowsで動作させるにはlibusbをインストールしてドライバを有効にして実行してください。手順は補足ページを参照してください。</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">「キネクトハッカーズマニュアル」正誤表</a><ul>
+<li><a class="reference internal" href="#id2">4章 ドライバのセットアップ</a></li>
+<li><a class="reference internal" href="#openni">5章 OpenNIプログラミング</a><ul>
+<li><a class="reference internal" href="#id3">5.2のコード</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id4">8章 アプリケーションを作ってみよう</a><ul>
+<li><a class="reference internal" href="#kinectweb-h">8.3 KinectWeb.h</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#kinecttips">9章 Kinectを使ったアプリケーション開発Tips</a><ul>
+<li><a class="reference internal" href="#id5">9.2 ハードウェアの操作</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Welcome to Kinect Book Support&#8217;s documentation!</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="appendix.html"
+                        title="next chapter">「キネクトハッカーズマニュアル」補足資料</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="sources/seigohyou.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="appendix.html" title="「キネクトハッカーズマニュアル」補足資料"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to Kinect Book Support’s documentation!"
+             >previous</a> |</li>
+        <li><a href="index.html">Kinect Book Support v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Takashi Nishibayashi.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>
