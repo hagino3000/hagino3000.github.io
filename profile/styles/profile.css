@@ -4,6 +4,7 @@ main {
     width: 800px;
     padding: 20px;
     color: #303030;
+    font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
 
 }
 
@@ -31,6 +32,11 @@ ul {
 
 h1 {
     margin-bottom: 0.2em;
+    font-weight: 400;
+}
+
+h2 {
+    font-weight: 300;
 
 }
 
