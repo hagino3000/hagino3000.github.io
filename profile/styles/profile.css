@@ -8,6 +8,11 @@ main {
 
 }
 
+header {
+    text-align: right;
+}
+
+
 a {
     text-decoration:none;
     border-bottom: dashed 1px #505050;
